@@ -1,184 +1,120 @@
-<!--Version 1.0 Created by Vincent Di Cairano-->
+<!--Version 1.0 Copyright (c) 2016 Vincent Di Cairano-->
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <title>HTML Email Title</title> <!--Remember to update the title-->
     <style type="text/css">
-        /*    Outlook.com and Hotmail fixes*/
-        .ExternalClass { width: 100%;}
-        .ExternalClass,.ExternalClass font,.ExternalClass td,{line-height: 100%;}
-        body {
-            margin: 0;
-            padding: 0;
-            -webkit-text-size-adjust: 100%;/*    fixes resize in iOS*/
-            -ms-text-size-adjust: 100%;/*    fixes resize in Windows Mobile */
-        }
-        img {
-            border: 0 none;
-            height: auto;
-            line-height: 100%;
-            outline: none;
-            text-decoration: none;
-        } 
-        a img {
-            border: 0 none;
-        }
+      /*    Outlook.com and Hotmail fixes*/
+      .ExternalClass { width: 100%;}
+      .ExternalClass,.ExternalClass font,.ExternalClass td,{line-height: 100%;}
+      body {
+        margin: 0;
+        padding: 0;
+        -webkit-text-size-adjust: 100%;/*    fixes resize in iOS*/
+        -ms-text-size-adjust: 100%;/*    fixes resize in Windows Mobile */
+      }
+      img {
+        border: 0 none;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      } 
+      a img {
+        border: 0 none;
+      }
     </style>
-</head>
+  </head>
 
-<body style="padding:0; margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:100%; background-color:#f7f7f7;">
+  <body style="padding:0; margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:100%; background-color:#f7f7f7;">
     <table cellpadding="0" cellspacing="0" style="width:100%;">
-        <tr>
-            <td align="center" valign="top" bgcolor="#ffffff" style="padding: 0 0 0 0;">
-                <table cellpadding="0" cellspacing="0" width="600">
-                    <tr>
-                        <td align="left">
-                            <!--start content here-->
-                        </td>
-                    </tr>
+      <tr>
+        <td align="center" valign="top" bgcolor="#ffffff" style="padding: 0 0 0 0;">
+          <table cellpadding="0" cellspacing="0" width="600">
+            <tr>
+              <td align="left">
+                <!--start content here-->
+              </td>
+            </tr>
+            <!--CODING GUIDE-->
+            <!--PARAGRAPHS & TEXT-->
+            <tr>
+              <td align="left" style="padding:0 0 0 0;line-height:18px;">
+                <font style="font-family:arial;font-size:16px;color:#000000;">
+                  TEXT_HERE
+                </font>
+              </td>
+            </tr>
+            <!--SUPERSCRIPTS & SUBSCRIPTS-->
+            <tr>
+              <td align="left" style="padding:0 0 0 0;line-height:18px;">
+                <font style="font-family:arial;font-size:16px;color:#000000;">
+                  Superscript<font style="font-size:12px;vertical-align:4px;line-height:0;">&reg;</font>
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" style="padding:0 0 0 0;line-height:18px;">
+                <font style="font-family:arial;font-size:16px;color:#000000;">
+                  Subscript<font style="font-size:10px;vertical-align:-2px;line-height:0;">2</font>
+                </font>
+              </td>
+            </tr>
+            <!--TABLES WITHIN TABLES-->
+            <tr>
+              <td align="left" style="padding: 0 0 0 0;">
+                <table cellpadding="0" cellspacing="0">
+                  <tr> 
+                    <td align="left" width="300">
+                      <!--start right content here-->
+                    </td>
+                    <td align="left" width="300">
+                      <!--start left content here-->
+                    </td>
+                  </tr>
                 </table>
-            </td>
-        </tr>
+              </td>
+            </tr>
+            <!--SPACER CELLS-->
+            <tr>
+              <td height="10" align="left" style="font-size:1px;line-height:1px;">&nbsp;</td>
+            </tr>
+            <!--IMAGES-->
+            <tr>
+              <td align="left" style="padding: 0 0 0 0;">
+                <img src="images/header.png" alt="Alt Here" width="100" height="50" border="0" style="display:block;"/>
+              </td>
+            </tr>
+            <!--BULLETS-->
+            <tr>
+              <td align="left" style="padding: 0 0 0 0;">
+                <table cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top" width="10" style="padding: 0 0 0 0;">
+                      <table cellpadding="0" cellspacing="0" style="font-size:1px;">
+                        <tr>
+                          <td align="left" style="padding:0 0 0 0;line-height:16px;">
+                            <font style="font-family:arial;font-size:14px;color:#000000;">&bull;</font>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td align="left" style="line-height: 16px;">
+                      <font style="font-family:arial;font-size:14px;color:#000000;">
+                        BULLET_TEXT_HERE
+                      </font>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!--END CODING GUIDE-->
+          </table>
+        </td>
+      </tr>
     </table>
-</body>
+  </body>
 
 </html>
-
-<!--
-/****** CODING GUIDE  ********/
-
-WIDTH
-PARAGRAPHS & TEXT
-EMPHASIS
-TABLES WITHIN TABLES
-SPACERS and PARAGRAPH SPACING
-INSERTING IMAGES
-BULLETS
-METRICS
-HTML EMAIL-SAFE FONTS
-SPECIAL CHARACTERS
-
-WIDTH:
-As a best practice, the width of an email shouldn't exceed 600px.  That is the maximum width of most email client preview panes.
-
-
-PARAGRAPHS & TEXT:
-Do not use <p> tags, instead put everything directly in <font> tag. <p> doesn't render consistently, especially with styling, and are more of a pain to fix than they're worth. Style line-height inside the <td> because it will not work in the <font> tag.
-            <tr>
-                <td align="left" style="padding:0 0 0 0;line-height:14px;">
-                    <font style="font-family:arial;font-size:14px;color:#000000;">
-                        TEXT_HERE
-                    </font>
-                </td>
-            </tr>
-
-
-EMPHASIS:
-Avoid using <em>, <strong>, or font-weight:bold, stick with <b></b> and <i></i>.
-
-AVOID USING:
-<div>, <p>, <span>, <em>, <li>, <h1>-<h6>, <sup>, <sub>. Many of them have preset styles that are very difficult to remove across the board. #ffffff and "white" inside color. Shorthand doesn't always work so it's best to keep it consistant with #ffffff. Here's a good alternative for superscripts:
-
-            <font style="font-size:8px;vertical-align:3px;line-height:0;">&reg;</font>
-
-
-TABLES WITHIN TABLES:
-Anytime you need to put a table within a table start off the tag as such adjust width if necessary, otherwise keep at 100%:
-
-            <tr>
-                <td align="left" style="padding: 0 0 0 0;">
-                    <table cellpadding="0" cellspacing="0">
-                        <tr> 
-                            <td align="left">
-                                CONTENT HERE
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-
-SPACERS and PARAGRAPH SPACING:
-When possible, avoid using <br /> tags between paragraph blocks, images and text, as spacing elements, etc. ONLY USE: when you need to return a line of text based on Vendor's art for consistency. Add this tag between two <tr>, adjust height accordingly:
-
-            <tr>
-                <td height="10" align="left"></td>
-            </tr>
-
-            <tr>
-                <td height="10" align="left" style="font-size:1px;line-height:1px;">&nbsp;</td>
-            </tr>
-
-
-INSERTING IMAGES:
-Use this standard for all images in the email. Some clients and borders to the images and sometimes they'll want to change size. It's best to have a definitive value for width and height. Use .png over others it will create a crisp image especially for text. Make sure all images get hosted.
-
-            <tr>
-                <td align="left" style="padding: 0 0 0 0;">
-                    <img src="images/header.png" alt="Info Here" width="100" height="50" border="0" style="display:block;"/>
-                </td>
-            </tr>
-
-
-BULLETS: 
-Do NOT put the bullet/number in the same <td> as the corresponding text. Use this standard instead. It is also more efficient  to use a spacer between each <tr> instead of padding. Use width to align the bullet with text if necessary.
-
-            <tr>
-                <td align="left" style="padding: 0 0 0 0;">
-                    <table cellpadding="0" cellspacing="0">
-                        <tr>
-                            <td align="left" valign="top" width="10" style="padding: 0 0 0 0;">
-                                <table cellpadding="0" cellspacing="0" style="font-size:1px;">
-                                    <tr>
-                                        <td align="left" style="padding:0 0 0 0;line-height:14px;">
-                                            <font style="font-family:arial;font-size:12px;color:#000000">&bull;</font>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td align="left" style="line-height: 14px;">
-                                <font style="font-family:arial;font-size:12px;color:#000000;">
-                                    BULLET_TEXT_HERE
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-
-METRICS:
-Only use px and % for sizes for height, width, fonts, etc. In some clients em, and et will not render correctly. IMPORTANT: Anytime you have a value of 0 DO NOT include any metric afterwards. DO NOT use PX inside html attributes such as width and height, but you must use % if you want a percent value.
-
-
-HTML EMAIL-SAFE FONTS:
-Remember to pick web-safe fonts and double check with the Vendor/graphic artist if they chose a font outside this list:
-
-            Sans Serif: Arial, Arial Black, Tahoma, Trebuchet MS, Verdana
-            Serif: Courier, Courier New, Georgia, Times, Times New Roman
-
-
-SPECIAL CHARACTERS:
-Here is a list of commonly used symbols that don't render correctly on email.
-
-            ‘ &lsquo;
-            ’ &rsquo;
-            “ &ldquo;
-            ” &rdquo;
-            — &mdash;
-            — &ndash;
-            ® &reg;
-            © &copy;
-            ™ &trade;
-            > &gt;
-            ≥ &ge;
-            < &lt;
-            ≤ &le;
-            non-breaking space &nbsp;
-            non-breaking hyphen &#8209;
-            zero width joiner &zwnj;
-
-
--->
