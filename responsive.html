@@ -33,29 +33,26 @@
       @media screen and (max-width: 540px),
         screen and (max-device-width: 540px) {
           body,div,p,a,td,font { -webkit-text-size-adjust: none;}
-          div[class="mobile-hide"],
-          table[class="mobile-hide"],
-          img[class="mobile-hide"],
-          td[class="mobile-hide"] {
+          *[class="mobile-hide"]{
             display: none !important;
             width: 0px !important;
             overflow: hidden !important;
           }
-          div[class="desktop-hide"] {
+          *[class="desktop-hide"] {
             display: block !important;
             width: 100% !important;
             max-height: inherit !important;
             overflow: visible !important;
             visibility: visible !important;
           }
-          table[class="container"] {
+          *[class="container"] {
             width: 100% !important;
           }
-          td[class="column-container"] {
+          *[class="column-container"] {
             display: block !important;
             width: 100% !important;
           }
-          td[class="no-padding"] {
+          *[class="no-padding"] {
             padding: 0 0 0 0 !important;
           }
           img[class="image-responsive"] {
@@ -112,12 +109,12 @@
               <td align="left" style="padding: 0 0 0 0;">
                 <table cellpadding="0" cellspacing="0">
                   <tr> 
-                    <td align="left" width="300" class="column-container">
+                    <th align="left" width="300" style="font-weight:normal;" class="column-container">
                       <!--start right content here-->
-                    </td>
-                    <td align="left" width="300" class="column-container">
+                    </th>
+                    <th align="left" width="300" style="font-weight:normal;" class="column-container">
                       <!--start left content here-->
-                    </td>
+                    </th>
                   </tr>
                 </table>
               </td>
