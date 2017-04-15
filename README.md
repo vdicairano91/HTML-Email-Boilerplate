@@ -72,6 +72,8 @@ zero width non joiner | `&zwnj;`
 - Anchor tags should be avoided, support was dropped for them in iOS 8
 - Add a zero width non jointer inside phone numbers and address to prevent them from autolinking in GMAIL and iOS.
 - Test emails in real life outside of Litmus
+- For responsive classes makes sure to add `class=""` as the last attribute in the tag
+- Check out Litmus' [Email Client Market Share](http://emailclientmarketshare.com) list to see which is the most popular email client
 - More tips to follow
 
 # License
